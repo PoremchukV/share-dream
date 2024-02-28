@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
+  width: 100%;
+  @media only screen and (min-width: 1200px){
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+.text {
+  color: var(--black);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 40px;
+  @media only screen and (min-width: 1200px){
+    margin-top: 0;
+  }
+}
+
+.image {
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  position: relative;
+  @media only screen and (min-width: 1200px){
+    margin: 0;
+  }
+}
+
+.input:focus-visible {
+  outline-color: var(--green);
+}
+
+.input[type=text] {
+  color: var(--black);
+}
+
+.wrapper {
+  padding: 0 16px;
+  @media only screen and (min-width: 1200px){
+    padding: 0;
+    align-self: start;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 16px;
+  outline: 0;
+  border: 2px solid var(--green);;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.input:focus-visible {
+  border: 2px solid var(--black);
+}
+
+.checkmark {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+.additionalContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerForm {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 70px;
+  gap: 12px;
+}
+
+.buttonGreen {
+  background-color: var(--green);
+  border: none;
+  color: var(--white);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-radius: 28px;
+  width: 160px;
+}
+
+.buttonWhite {
+  background-color: var(--white);
+  border: 2px solid var(--green);
+  color: var(--green);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-radius: 28px;
+  width: 160px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  justify-content: center;
+  gap: 8px;
+}
+
+.linkedin {
+  width: 24px;
+  height: 24px;
+}
